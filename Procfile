@@ -1,1 +1,1 @@
-postdeploy: docker compose up -d && npm run migrate
+postdeploy: npm run migrate
