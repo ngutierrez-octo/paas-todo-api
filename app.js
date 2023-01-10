@@ -18,7 +18,7 @@ app.get("/todos", async function (req, res) {
   } catch (error) {
     console.error(error)
   }
-  res.send(todos)
+  res.send("<pre>".concat(todos).concat("</pre>"))
 })
 
 app.post("/todos", async function (req, res) {
