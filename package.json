@@ -6,12 +6,14 @@
     "start": "node app.js",
     "start:watch": "nodemon app.js",
     "migrate": "sequelize db:migrate",
-    "migrate:undo": "sequelize db:migrate:undo"
+    "migrate:undo": "sequelize db:migrate:undo",
+    "start:worker": "node worker.js"
   },
   "author": "OCTO",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bull": "^4.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "pg": "^8.8.0",
