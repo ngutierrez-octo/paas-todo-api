@@ -8,7 +8,7 @@ console.log(
 )
 try {
     sequelize.query(
-        `DELETE FROM todos WHERE statut= 'EN_COURS'`
+        `DELETE FROM todos WHERE statut= 'EN_RETARD'`
     )
 } catch (error) {
     console.error(error)
